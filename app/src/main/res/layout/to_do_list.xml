@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    tools:context=".view.toDoList.ToDoList">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Columns-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoFragmentBeginColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoFragmentEndColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoFragmentBeginColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoFragmentEndColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoListFragmentBeginColumn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.77" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoListFragmentEndColumn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <!--rows-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoFragmentBeginRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoFragmentEndRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoFragmentBeginRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.59" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoFragmentEndRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoListFragmentBeginRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toDoListFragmentEndRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <!--Components-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/toDoListAnimation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/toDoFragmentEndRow1"
+            app:layout_constraintEnd_toEndOf="@+id/toDoFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/toDoFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/toDoFragmentBeginRow1"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/planet"
+             />
+        <TextView
+            android:id="@+id/emptyMessage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/galactic"
+            android:gravity="center"
+            android:text="@string/emptyMessage"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/toDoFragmentEndRow2"
+            app:layout_constraintEnd_toEndOf="@+id/toDoFragmentEndColumn2"
+            app:layout_constraintStart_toStartOf="@+id/toDoFragmentBeginColumn2"
+            app:layout_constraintTop_toTopOf="@+id/toDoFragmentBeginRow2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/floatingToDoListButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/floating_button"
+            android:text="+"
+            android:elevation="15dp"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/toDoListFragmentEndRow3"
+            app:layout_constraintEnd_toEndOf="@+id/toDoListFragmentEndColumn3"
+            app:layout_constraintStart_toStartOf="@+id/toDoListFragmentBeginColumn3"
+            app:layout_constraintTop_toTopOf="@+id/toDoListFragmentBeginRow3"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

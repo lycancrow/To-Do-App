@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">To Do App</string>
+
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Personal ToDo List</item>
+        <item>Work ToDo List</item>
+        <item>Calendar</item>
+        <item>About</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+
+    <string name="emptyMessage">Wow… this looks very empty. \n Press the plus sign to add a task</string>
+
+    <string name="addTaskHint">Type here for a new task</string>
+
+    <string name="task">Add Task</string>
+
+    <string name="aboutText">This app was made by Felipe Cuervo. Track your tasks using this app.
+        \n The concepts used in this project are: \n \n Room \n \n MVVM Architecture \n \n Lottie \n \n fragments\n \n LiveData \n \n coroutines</string>
+
+</resources>

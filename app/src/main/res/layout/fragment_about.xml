@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.about.About"
+    android:background="@color/fragment_bg">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Columns-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutBeginColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutEndColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutBeginColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.57" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutEndColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+
+
+
+        <!--Rows-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutBeginRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutEndRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.125" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutBeginRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutEndRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutBeginRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutEndRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutBeginRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutEndRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <!--Components-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/astronautHeadphones"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/astronaut_headphones"
+
+            app:layout_constraintBottom_toBottomOf="@+id/aboutEndRow2"
+            app:layout_constraintEnd_toEndOf="@+id/aboutEndColumn2"
+            app:layout_constraintStart_toStartOf="@+id/aboutBeginColumn2"
+            app:layout_constraintTop_toTopOf="@+id/aboutBeginRow2"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/smart_alien"
+
+            app:layout_constraintBottom_toBottomOf="@+id/aboutEndRow4"
+            app:layout_constraintEnd_toEndOf="@+id/aboutEndColumn2"
+            app:layout_constraintStart_toStartOf="@+id/aboutBeginColumn2"
+            app:layout_constraintTop_toTopOf="@+id/aboutBeginRow4"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/galactic"
+            android:text="About"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="@+id/aboutEndRow1"
+            app:layout_constraintEnd_toEndOf="@+id/aboutEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/aboutBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/aboutBeginRow1"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/galactic"
+            android:text="@string/aboutText"
+            android:textColor="@color/white"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/aboutEndRow3"
+            app:layout_constraintEnd_toEndOf="@+id/aboutEndColumn1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/aboutBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/aboutBeginRow3"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- astronaut_headphones.json -->
+
+</FrameLayout>

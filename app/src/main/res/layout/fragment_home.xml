@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.home.Home"
+    android:background="@color/fragment_bg">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Columns-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.77" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginColumn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndColumn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <!--rows-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.59" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+
+
+        <!--Components-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/alien_green"
+            app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow1"
+            app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow1"
+            />
+
+        <TextView
+            android:id="@+id/emptyMessage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/emptyMessage"
+            android:gravity="center"
+            android:fontFamily="@font/galactic"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow3"
+            app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn3"
+            app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn3"
+            app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow3"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/totalListToDo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+     <androidx.appcompat.widget.AppCompatButton
+         android:id="@+id/floatingHomeButton"
+         android:layout_width="0dp"
+         android:layout_height="0dp"
+         android:background="@drawable/floating_button"
+         android:text="+"
+         android:textColor="@color/white"
+         android:autoSizeTextType="uniform"
+         android:gravity="center"
+         app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow2"
+         app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn2"
+         app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn2"
+         app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow2"
+         />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>

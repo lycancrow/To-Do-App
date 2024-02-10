@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+
+    <color name="purple_700">#BBBBBB</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray">#DC686666</color>
+
+
+    <color name="navigationBar">#424242</color>
+    <color name="colorView">#757575</color>
+    <color name ="fragment_bg">#1b3159</color>
+
+    <color name="complementColor">#081425</color>
+
+    <color name="splash_bg">#1E293B</color>
+
+    <color name = "skyBlue">#19B5E9</color>
+</resources>
+

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.taskTemplateDetails.TaskTemplateDetails"
+    android:background="@color/fragment_bg">
+
+
+    <!--Columns-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginColumn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndColumn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginColumn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndColumn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginColumn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndColumn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!--Rows-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentBeginRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/taskTemplateDetailFragmentEndRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <!--Components-->
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Do exercise"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/galactic"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTemplateDetailFragmentEndRow1"
+        app:layout_constraintEnd_toEndOf="@+id/taskTemplateDetailFragmentEndColumn1"
+        app:layout_constraintStart_toStartOf="@+id/taskTemplateDetailFragmentBeginColumn1"
+        app:layout_constraintTop_toTopOf="@+id/taskTemplateDetailFragmentBeginRow1"
+        />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationIcon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/exercise"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTemplateDetailFragmentEndRow2"
+        app:layout_constraintEnd_toEndOf="@+id/taskTemplateDetailFragmentEndColumn1"
+        app:layout_constraintStart_toStartOf="@+id/taskTemplateDetailFragmentBeginColumn1"
+        app:layout_constraintTop_toTopOf="@+id/taskTemplateDetailFragmentBeginRow2"/>
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Reminder Phrase"
+        android:textColor="@color/white"
+        android:fontFamily="@font/galactic"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTemplateDetailFragmentEndRow3"
+        app:layout_constraintEnd_toEndOf="@+id/taskTemplateDetailFragmentEndColumn1"
+        app:layout_constraintStart_toStartOf="@+id/taskTemplateDetailFragmentBeginColumn1"
+        app:layout_constraintTop_toTopOf="@+id/taskTemplateDetailFragmentBeginRow3"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/reminderPhraseTemplate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTemplateDetailFragmentEndRow4"
+        app:layout_constraintEnd_toEndOf="@+id/taskTemplateDetailFragmentEndColumn1"
+        app:layout_constraintStart_toStartOf="@+id/taskTemplateDetailFragmentBeginColumn1"
+        app:layout_constraintTop_toTopOf="@+id/taskTemplateDetailFragmentBeginRow4"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Repeat on"
+        android:textColor="@color/white"
+        android:fontFamily="@font/galactic"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTemplateDetailFragmentEndRow5"
+        app:layout_constraintEnd_toEndOf="@+id/taskTemplateDetailFragmentEndColumn1"
+        app:layout_constraintStart_toStartOf="@+id/taskTemplateDetailFragmentBeginColumn1"
+        app:layout_constraintTop_toTopOf="@+id/taskTemplateDetailFragmentBeginRow5"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTemplateDetailFragmentEndRow6"
+        app:layout_constraintEnd_toEndOf="@+id/taskTemplateDetailFragmentEndColumn2"
+        app:layout_constraintStart_toStartOf="@+id/taskTemplateDetailFragmentBeginColumn2"
+        app:layout_constraintTop_toTopOf="@+id/taskTemplateDetailFragmentBeginRow6"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taskTemplateSun"
+            android:layout_width="0dp"
+            android:background="@drawable/week_button"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
+            android:text="Sun"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taskTemplateMon"
+            android:layout_width="0dp"
+            android:background="@drawable/week_button"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
+            android:text="Mon"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taskTemplateTue"
+            android:layout_width="0dp"
+            android:background="@drawable/week_button"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
+            android:text="Tue"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taskTemplateWed"
+            android:layout_width="0dp"
+            android:background="@drawable/week_button"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
+            android:text="Wed"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taskTemplateThu"
+            android:layout_width="0dp"
+            android:background="@drawable/week_button"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
+            android:text="Thu"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taskTemplateFri"
+            android:layout_width="0dp"
+            android:background="@drawable/week_button"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
+            android:text="Fri"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/taskTemplateSat"
+            android:layout_width="0dp"
+            android:background="@drawable/week_button"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
+            android:text="Sat"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setHour"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Set an hour +"
+        android:textColor="@color/white"
+        android:fontFamily="@font/galactic"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTemplateDetailFragmentEndRow7"
+        app:layout_constraintEnd_toEndOf="@+id/taskTemplateDetailFragmentEndColumn1"
+        app:layout_constraintStart_toStartOf="@+id/taskTemplateDetailFragmentBeginColumn1"
+        app:layout_constraintTop_toTopOf="@+id/taskTemplateDetailFragmentBeginRow7"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/taskTemplateSubmit"
+        android:layout_width="0dp"
+        android:background="@drawable/button_bg"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="24sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTemplateDetailFragmentEndRow8"
+        app:layout_constraintEnd_toEndOf="@+id/taskTemplateDetailFragmentEndColumn3"
+        app:layout_constraintStart_toStartOf="@+id/taskTemplateDetailFragmentBeginColumn3"
+        app:layout_constraintTop_toTopOf="@+id/taskTemplateDetailFragmentBeginRow8"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

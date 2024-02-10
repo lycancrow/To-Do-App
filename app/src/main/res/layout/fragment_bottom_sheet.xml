@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.bottomSheet.BottomSheet"
+    android:background="@drawable/add_task_bg">
+
+
+    <!--Components-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/edit_text_bg"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/taskEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/addTaskHint"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/submitTaskButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/week_button"
+                    android:text="Go"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bottomMenuSun"
+                android:layout_width="0dp"
+                android:background="@drawable/week_button"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20sp"
+                android:text="Sun"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bottomMenuMon"
+                android:layout_width="0dp"
+                android:background="@drawable/week_button"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20sp"
+                android:text="Mon"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bottomMenuTue"
+                android:layout_width="0dp"
+                android:background="@drawable/week_button"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20sp"
+                android:text="Tue"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bottomMenuWed"
+                android:layout_width="0dp"
+                android:background="@drawable/week_button"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20sp"
+                android:text="Wed"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bottomMenuThu"
+                android:layout_width="0dp"
+                android:background="@drawable/week_button"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20sp"
+                android:text="Thu"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bottomMenuFri"
+                android:layout_width="0dp"
+                android:background="@drawable/week_button"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20sp"
+                android:text="Fri"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bottomMenuSat"
+                android:layout_width="0dp"
+                android:background="@drawable/week_button"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20sp"
+                android:text="Sat"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/personalOrWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:layout_marginEnd="5dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/personalOrWorkPlanet"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/planet"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"/>
+
+
+                <TextView
+                    android:id="@+id/personalOrWorkText"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="personal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/galactic"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="24sp"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/selectDateHourDetails"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/calendar_buton_bg"
+                android:gravity="center"
+                android:text="01"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/openTemplates"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/to_do_button_bg"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

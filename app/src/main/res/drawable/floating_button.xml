@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado normal -->
+    <item android:state_pressed="false">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="#be9809" /> <!-- Color rojo -->
+        </shape>
+    </item>
+
+    <!-- Estado presionado -->
+    <item android:state_pressed="true">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="#A77214" /> <!-- Cambia a otro tono de rojo al ser presionado -->
+        </shape>
+    </item>
+</selector>
